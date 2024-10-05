@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'poppins', sans-serif;
+    font-size: 18px;
+}
+
+body {
+    background-image: url('./img/bg\ agradecimento.png');
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: bisque;
+}
+
+a > span {
+    color: rgb(20, 166, 12);
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: white;
+    padding-top: 50px;
+}
+
+@media screen and (max-width: 1064px) {
+    h1 {
+        font-size: 28px;
+        margin-left: 50px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    #insta {
+        margin-left: 75px;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    #insta span {
+        padding-top: 10px;
+    }
+}
