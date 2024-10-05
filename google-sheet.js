@@ -1,3 +1,22 @@
+//função apenas número no campo celular
+//receber seletor class número celular
+var numeroCelular = document.getElementById('celular')
+
+numeroCelular.addEventListener("input", () => {
+  // remover os caracteres não númericos usando expressãso regular /\D/g e limitar 11 dígitos.
+  var limparValor = numeroCelular.value.replace(/\D/g, "").substring(0, 11);
+
+  
+  // dividir a string em array de caracteres individuais
+  var numeroArray = limparValor.split("");
+
+  var numeroFormatado = "";
+  
+  // enviar o número para o campo formatado
+  numeroCelular.value = limparValor;
+  
+});
+
 //função eviar dados para a planilha do google drive
 
 const manipularEnviar = (event) => {
