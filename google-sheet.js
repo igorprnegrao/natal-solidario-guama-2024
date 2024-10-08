@@ -1,7 +1,4 @@
-
-
 //função eviar dados para a planilha do google drive
-
 const manipularEnviar = (event) => {
   //capturar o evento e da uma preventdefault para evitar que a pág. recarregue
   event.preventDefault();
